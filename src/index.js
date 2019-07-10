@@ -46,7 +46,13 @@ const resolvers={
 
     },
     Mutation:{
-        createUser(ard)
+        createUser(parent,args,ctx,info){
+             return {
+               id:args.id,
+               name:args.name,
+               quantity:args.quantity
+             }
+        }
     }
 }
 
