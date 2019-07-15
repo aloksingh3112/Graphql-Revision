@@ -1,0 +1,16 @@
+
+ type Query{
+       hello:String,
+       hi:Int,
+       gg:[Int!],
+       product:Product,
+       me(name:String):String
+   },
+   type Mutation{
+       createUser(id:ID,name:String,quantity:Int):Product
+   },
+   type Product{
+       id:ID,
+       name:String,
+       quantity:Int
+   }  
